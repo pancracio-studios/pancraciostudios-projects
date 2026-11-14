@@ -6,9 +6,9 @@ Guía interna para mantener el catálogo ordenado.
 
 1. Genera el instalador (por ejemplo `LiveTranslator-Setup-1.1.0.exe`).
 2. Calcula su huella: `Get-FileHash .\LiveTranslator-Setup-1.1.0.exe` (PowerShell).
-3. Crea un **Release** con la etiqueta `<programa>-v<versión>` (ej. `live-translator-v1.1.0`) y adjunta:
-   - el instalador,
-   - `SHA256SUMS.txt` con la huella.
+3. Copia el instalador y un `SHA256SUMS.txt` con la huella a `programs/<programa>/installers/<versión>/`.
+   Al subirlo, la automatización `.github/workflows/publicar-versiones.yml` crea el **Release**
+   `<programa>-v<versión>` con esos archivos y las notas de `versions/<versión>.md` (escríbelas antes).
 4. En `programs/<programa>/`:
    - agrega `versions/<versión>.md` con las novedades y la huella,
    - agrega la entrada al inicio de `CHANGELOG.md`,

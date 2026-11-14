@@ -31,6 +31,7 @@ programs/
     index.html              Página del programa
     README.md               Resumen
     docs/                   Documentación (guía de uso, problemas comunes)
+    installers/<versión>/   Instalador de cada versión + SHA256SUMS.txt
     versions/               Notas de cada versión
     CHANGELOG.md            Historial de cambios
     PRIVACY.md              Privacidad del programa
@@ -40,8 +41,9 @@ PRIVACY.md                  Privacidad general
 PUBLICAR.md                 Cómo agregar un programa o una versión nueva
 ```
 
-Los instaladores (`.exe`) no se guardan en las carpetas: se publican en **Releases**, una por versión
-(`<programa>-v<versión>`), junto con su huella SHA-256 para comprobar que el archivo es original.
+Cada instalador se guarda en `programs/<programa>/installers/<versión>/` y, al subirlo, una automatización
+publica su **Release** (`<programa>-v<versión>`) con las notas de la versión y la huella SHA-256
+para comprobar que el archivo es original.
 
 ## Antes de instalar · Before installing
 
