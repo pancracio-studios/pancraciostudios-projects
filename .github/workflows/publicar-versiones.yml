@@ -1,0 +1,48 @@
+# Crea un Release por cada carpeta programs/<programa>/installers/<versión>/ que aún no tenga uno.
+# La etiqueta es <programa>-v<versión> y las notas salen de programs/<programa>/versions/<versión>.md
+name: Publicar versiones
+
+on:
+  push:
+    branches: [main]
+    paths: ["programs/*/installers/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Crear los releases que falten
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for dir in programs/*/installers/*/; do
+            prog="$(basename "$(dirname "$(dirname "$dir")")")"
+            ver="$(basename "$dir")"
+            tag="${prog}-v${ver}"
+            if gh release view "$tag" >/dev/null 2>&1; then
+              echo "Ya existe $tag"
+              continue
+            fi
+            files=("$dir"*)
+            if [ ${#files[@]} -eq 0 ]; then
+              echo "Sin archivos en $dir"
+              continue
+            fi
+            name="$(jq -r --arg id "$prog" '.programs[] | select(.id == $id) | .name' catalog.json)"
+            [ -n "$name" ] || name="$prog"
+            notes="programs/${prog}/versions/${ver}.md"
+            if [ -f "$notes" ]; then
+              gh release create "$tag" "${files[@]}" --title "$name $ver" --target "$GITHUB_SHA" --notes-file "$notes"
+            else
+              gh release create "$tag" "${files[@]}" --title "$name $ver" --target "$GITHUB_SHA" --notes ""
+            fi
+            echo "Publicado $tag"
+          done
