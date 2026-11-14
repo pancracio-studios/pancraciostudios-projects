@@ -1,0 +1,32 @@
+{
+  "studio": "Pancracio Studios",
+  "contact": "pancraciostudios@gmail.com",
+  "programs": [
+    {
+      "id": "live-translator",
+      "name": "Live Translator",
+      "version": "1.0.0",
+      "released": "2026-11-13",
+      "platform": "Windows 10 / 11 (64 bits)",
+      "size": "50 MB",
+      "color": "#4cd68a",
+      "icon": "programs/live-translator/img/icon.png",
+      "image": "programs/live-translator/img/despues.png",
+      "page": "programs/live-translator/",
+      "download": "https://github.com/pancracio-studios/pancraciostudios-projects/releases/download/live-translator-v1.0.0/LiveTranslator-Setup-1.0.0.exe",
+      "docs": "https://github.com/pancracio-studios/pancraciostudios-projects/tree/main/programs/live-translator",
+      "tagline": {
+        "es": "Traduce en vivo el texto de tu pantalla: juegos, páginas, documentos.",
+        "en": "Translate on-screen text live: games, websites, documents."
+      },
+      "description": {
+        "es": "Lee el texto de una pantalla, ventana o región y lo muestra traducido en el mismo lugar, en otro monitor o encima del original. Ideal para RPGs y juegos con mucho texto.",
+        "en": "Reads the text of a screen, window or region and shows it translated in the same place, on another monitor or on top of the original. Great for RPGs and text-heavy games."
+      },
+      "tags": {
+        "es": ["Traducción", "Juegos", "Multimonitor", "40+ idiomas"],
+        "en": ["Translation", "Games", "Multi-monitor", "40+ languages"]
+      }
+    }
+  ]
+}
