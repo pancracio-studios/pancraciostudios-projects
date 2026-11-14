@@ -24,9 +24,20 @@
         "en": "Reads the text of a screen, window or region and shows it translated in the same place, on another monitor or on top of the original. Great for RPGs and text-heavy games."
       },
       "tags": {
-        "es": ["Traducción", "Juegos", "Multimonitor", "40+ idiomas"],
-        "en": ["Translation", "Games", "Multi-monitor", "40+ languages"]
+        "es": [
+          "Traducción",
+          "Juegos",
+          "Multimonitor",
+          "40+ idiomas"
+        ],
+        "en": [
+          "Translation",
+          "Games",
+          "Multi-monitor",
+          "40+ languages"
+        ]
       }
     }
-  ]
+  ],
+  "support": "https://ko-fi.com/pancraciostudios"
 }

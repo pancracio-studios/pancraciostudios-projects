@@ -45,6 +45,13 @@ Cada instalador se guarda en `programs/<programa>/installers/<versión>/` y, al 
 publica su **Release** (`<programa>-v<versión>`) con las notas de la versión y la huella SHA-256
 para comprobar que el archivo es original.
 
+## Apoyar · Support
+
+Todo es gratis y seguirá siéndolo. Si algo te sirvió y quieres apoyar para que salgan más programas:
+Everything is free and will stay free. If something helped you and you'd like to support more programs:
+
+<a href="https://ko-fi.com/pancraciostudios"><b>☕ Apoyar en Ko-fi · Support on Ko-fi</b></a>
+
 ## Antes de instalar · Before installing
 
 Los instaladores no están firmados con un certificado de pago, así que Windows puede mostrar

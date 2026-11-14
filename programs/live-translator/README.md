@@ -9,7 +9,8 @@
 
 <p align="center">
   <a href="https://github.com/pancracio-studios/pancraciostudios-projects/releases/download/live-translator-v1.0.0/LiveTranslator-Setup-1.0.0.exe"><b>⬇ Descargar v1.0.0 (Windows, 50 MB)</b></a> ·
-  <a href="https://pancracio-studios.github.io/pancraciostudios-projects/programs/live-translator/">Página</a>
+  <a href="https://pancracio-studios.github.io/pancraciostudios-projects/programs/live-translator/">Página</a> ·
+  <a href="https://ko-fi.com/pancraciostudios">☕ Apoyar</a>
 </p>
 
 <p align="center"><img src="img/despues.png" width="720" alt="Juego traducido con Live Translator"></p>
