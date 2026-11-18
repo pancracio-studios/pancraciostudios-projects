@@ -56,20 +56,22 @@
               <img src="${esc(p.icon)}" alt="" width="52" height="52">
               <div>
                 <h2><a href="${esc(p.page)}" style="color:inherit;text-decoration:none">${esc(p.name)}</a></h2>
-                <div class="meta">v${esc(p.version)} · ${esc(p.platform)}</div>
+                <div class="meta">${p.store === "play" ? "" : "v" + esc(p.version) + " · "}${esc(p.platform)}</div>
               </div>
             </div>
             <p>${both(p.tagline)}</p>
             <div class="tags">${p.tags.es.map((t, i) => `<span class="tag"><span lang="es">${esc(t)}</span><span lang="en">${esc(p.tags.en[i] || t)}</span></span>`).join("")}</div>
             <div class="actions">
-              <a class="btn primary" href="${esc(p.download)}">⬇ <span lang="es">Descargar</span><span lang="en">Download</span> <small>${esc(p.size)}</small></a>
+              ${p.store === "play"
+                ? `<a class="btn primary" href="${esc(p.download)}" target="_blank" rel="noopener">▶ <span lang="es">Google Play</span><span lang="en">Google Play</span></a>`
+                : `<a class="btn primary" href="${esc(p.download)}">⬇ <span lang="es">Descargar</span><span lang="en">Download</span> <small>${esc(p.size)}</small></a>`}
               <a class="btn" href="${esc(p.page)}"><span lang="es">Ver más</span><span lang="en">Details</span></a>
             </div>
           </div>
         </article>`).join("") + `
         <article class="card soon"><div class="body" style="justify-content:center">
           <div class="big">🐈‍⬛</div>
-          <b><span lang="es">Más programas en camino</span><span lang="en">More programs on the way</span></b>
+          <b><span lang="es">Más proyectos en camino</span><span lang="en">More projects on the way</span></b>
           <span><span lang="es">Vuelve pronto.</span><span lang="en">Check back soon.</span></span>
         </div></article>`;
       const count = document.getElementById("count");

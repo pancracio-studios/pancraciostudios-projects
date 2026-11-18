@@ -37,6 +37,41 @@
           "40+ languages"
         ]
       }
+    },
+    {
+      "id": "pixel-todo",
+      "name": "Pixel To-Do",
+      "version": "1.0",
+      "released": "2026-11-18",
+      "platform": "Android",
+      "store": "play",
+      "color": "#f4b942",
+      "icon": "programs/pixel-todo/img/icon.png",
+      "image": "programs/pixel-todo/img/banner.png",
+      "page": "programs/pixel-todo/",
+      "download": "https://play.google.com/store/apps/details?id=com.pancraciostudios.pixeltodo",
+      "tagline": {
+        "es": "Tus pendientes como un juego pixel: gana XP y oro y construye tu ciudad.",
+        "en": "Your to-do list as a pixel game: earn XP and gold and build your city."
+      },
+      "description": {
+        "es": "Cada misión y hábito que cumples te da XP y oro para subir de nivel, construir tu ciudad pixel y comprar accesorios para tu avatar.",
+        "en": "Every quest and habit you complete gives XP and gold to level up, build your pixel city and buy accessories for your avatar."
+      },
+      "tags": {
+        "es": [
+          "Productividad",
+          "Hábitos",
+          "Pixel art",
+          "Android"
+        ],
+        "en": [
+          "Productivity",
+          "Habits",
+          "Pixel art",
+          "Android"
+        ]
+      }
     }
   ],
   "support": "https://ko-fi.com/pancraciostudios"

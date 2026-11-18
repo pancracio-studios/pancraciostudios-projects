@@ -30,6 +30,6 @@ privacy policy explain what data is sent and to whom.
 This catalog is hosted on GitHub Pages, which may log technical visit data according to
 [GitHub's policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
 
-Programas · Programs: [Live Translator](programs/live-translator/PRIVACY.md)
+Programas · Programs: [Live Translator](programs/live-translator/PRIVACY.md) · [Pixel To-Do](https://pancracio-studios.github.io/pixel-todo/privacy/)
 
 Contacto · Contact: pancraciostudios@gmail.com

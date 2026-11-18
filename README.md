@@ -2,10 +2,10 @@
   <img src="assets/img/pancracio-logo.png" width="96" alt="Pancracio Studios">
 </p>
 
-<h1 align="center">Pancracio Studios · Programas</h1>
+<h1 align="center">Pancracio Studios · Proyectos</h1>
 
 <p align="center">
-  Programas gratuitos para Windows · Free programs for Windows<br>
+  Programas para Windows y apps para Android, gratis · Free Windows programs and Android apps<br>
   <a href="https://pancracio-studios.github.io/pancraciostudios-projects/"><b>Ver el catálogo · See the catalog</b></a>
 </p>
 
@@ -16,6 +16,7 @@
 | | Programa | Versión | Descripción | Descarga |
 |---|---|---|---|---|
 | <img src="programs/live-translator/img/icon.png" width="40"> | [Live Translator](programs/live-translator/) | 1.0.0 | Traduce en vivo el texto de tu pantalla (juegos, páginas, documentos). | [Instalador](https://github.com/pancracio-studios/pancraciostudios-projects/releases/download/live-translator-v1.0.0/LiveTranslator-Setup-1.0.0.exe) |
+| <img src="programs/pixel-todo/img/icon.png" width="40"> | [Pixel To-Do](programs/pixel-todo/) | 1.0 | Tus pendientes como un juego pixel para Android: XP, oro y tu propia ciudad. | [Google Play](https://play.google.com/store/apps/details?id=com.pancraciostudios.pixeltodo) |
 
 Todas las versiones e instaladores están en **[Releases](https://github.com/pancracio-studios/pancraciostudios-projects/releases)**.
 All versions and installers are in **[Releases](https://github.com/pancracio-studios/pancraciostudios-projects/releases)**.
